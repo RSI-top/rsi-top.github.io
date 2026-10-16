@@ -859,6 +859,11 @@
 
   /* ---------- frontier charts: one typeface, recessive axes ---------- */
   .fc .tick,.fc .stall-lab,.fc .clock{font-family:var(--body);font-variant-numeric:tabular-nums;}
+
+  /* lab logo in the hero affiliation line */
+  .affil .lab{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:none;}
+  .affil .lab img{width:40px;height:40px;display:block;}
+  .affil .lab:hover span{color:var(--blue);}
 </style>
 </head>
 <body>
@@ -902,7 +907,7 @@
       <div class="authors">
         <span>Yuzhen Mao</span><span>Jacky Kwok</span><span>Shayan Talaei</span><span>Azalia Mirhoseini</span>
       </div>
-      <p class="affil">Stanford University</p>
+      <p class="affil"><a class="lab" href="https://scalingintelligence.stanford.edu/" target="_blank" rel="noopener"><img src="website/sil-logo.png" width="40" height="40" alt="Scaling Intelligence Lab logo" /><span>Scaling Intelligence Lab · Stanford University</span></a></p>
     </div>
   </div>
 </header>
